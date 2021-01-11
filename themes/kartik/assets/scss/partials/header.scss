@@ -1,0 +1,26 @@
+header {
+    .header {
+        background: $basecolor;
+        min-height: 100px;
+        padding: 20px;
+
+        .site-logo {
+            img {
+                height: 100px;
+            }
+        }
+    }
+
+    nav {
+        &.navbar {
+            background: #f1f1f1;
+
+            .nav-link {
+                &.current {
+                    color: black;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
