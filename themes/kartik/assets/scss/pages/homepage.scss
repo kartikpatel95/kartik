@@ -1,8 +1,12 @@
+@import "assets/scss/mixins";
+
 .home-page {
     .banner {
         height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: rgba(200,100,0, 0.3); // Tint color
+        background-blend-mode: multiply;
         .banner-message {
             height: 100%;
             display: flex;
@@ -11,6 +15,10 @@
             font-size: 48px;
             font-weight: 700;
             line-height: 60px;
+            animation: fadeIn ease 5s;
+            .content {
+                max-width: 600px;
+            }
         }
     }
 }

@@ -2,7 +2,9 @@
     <% if $Banner %>
         <div class="banner" style="background-image: url($Banner.Link);">
             <div class="banner-message container">
-                $BannerMessage
+                <div class="content">
+                    $BannerMessage
+                    </div>
             </div>
         </div>
     <% end_if %>
