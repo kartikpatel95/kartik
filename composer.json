@@ -46,7 +46,8 @@
         ],
         "expose": [
             "themes/kartik/dist/javascript",
-            "themes/kartik/dist/css"
+            "themes/kartik/dist/css",
+            "themes/kartik/dist/img"
         ]
     },
     "config": {

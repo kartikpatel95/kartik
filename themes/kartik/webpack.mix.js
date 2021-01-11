@@ -12,6 +12,10 @@ const config = {
         src: './assets/scss/layout.scss',
         dest: './dist/css'
     },
+    img: {
+        src: './assets/img',
+        dest: './dist/img'
+    },
     vendor: {
         css: [
             'node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -33,6 +37,7 @@ mix.sass(config.scss.src, config.scss.dest).sourceMaps()
     .copy(config.css.src, config.css.dest)
     .copy(config.vendor.css, './dist/css/vendor')
     .copy(config.vendor.javascript, './dist/javascript/vendor')
+    .copyDirectory(config.img.src, config.img.dest)
     .browserSync({
         open: "external",
         proxy: "kartik.vcap.me",

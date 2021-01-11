@@ -1,0 +1,58 @@
+<?php
+
+namespace App\Pages;
+
+use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Assets\Image;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Forms\TextareaField;
+
+/**
+ * Class HomePage
+ *
+ * @package App\Pages
+ */
+class HomePage extends \Page
+{
+
+    /**
+     * @var string
+     */
+    private static $table_name = "HomePage";
+
+    /**
+     * @var array
+     */
+    private static $db = [
+        'BannerMessage' => 'Text'
+    ];
+
+    /**
+     * @var array
+     */
+    private static $has_one = [
+        'Banner' => Image::class
+    ];
+
+    /**
+     * @var array
+     */
+    private static $owns = [
+        'Banner'
+    ];
+
+    /**
+     * @return FieldList
+     */
+    public function getCMSFields(): FieldList
+    {
+        $fields = parent::getCMSFields();
+
+        $banner = UploadField::create('Banner', 'Banner');
+        $banner->setFolderName('Banners');
+        $fields->addFieldToTab('Root.Main', TextareaField::create('BannerMessage'), 'ElementalArea');
+        $fields->addFieldToTab('Root.Main', $banner, 'ElementalArea');
+
+        return $fields;
+    }
+}

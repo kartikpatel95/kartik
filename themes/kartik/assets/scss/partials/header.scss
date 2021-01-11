@@ -2,22 +2,27 @@ header {
     .header {
         background: $basecolor;
         min-height: 100px;
-        padding: 20px;
+
+        &.home-page-header {
+            position: absolute;
+            background: rgba(0,0,0,0.5);
+            width: 100%;
+        }
 
         .site-logo {
             img {
-                height: 100px;
+                height: 85px;
             }
         }
     }
 
     nav {
         &.navbar {
-            background: #f1f1f1;
-
             .nav-link {
+                letter-spacing: 1px;
+                font-size: 16px;
                 &.current {
-                    color: black;
+                    color: white;
                     font-weight: 700;
                 }
             }
