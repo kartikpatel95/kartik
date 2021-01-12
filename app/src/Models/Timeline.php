@@ -35,7 +35,8 @@ class Timeline extends DataObject
     private static $db = [
         'Message' => 'Varchar',
         'Date' => 'Date',
-        'Active' => 'Boolean'
+        'Active' => 'Boolean',
+        'Sort' => 'Int'
     ];
 
     /**
@@ -61,7 +62,30 @@ class Timeline extends DataObject
     {
         $fields = parent::getCMSFields();
         $fields->removeByName('TimelineElementID');
+        $fields->removeByName('Sort');
 
         return $fields;
+    }
+
+    public function onAfterWrite()
+    {
+        if ($this->Active) {
+            $lines = self::get()->filter(
+                [
+                    'Active' => 1,
+                    'TimelineElement.ID' => $this->TimelineElementID,
+                    'ID:not' => $this->ID
+                ]
+            );
+
+            if ($lines->count()) {
+                foreach ($lines as $line) {
+                    $line->Active = 0;
+                    $line->write();
+                }
+            }
+        }
+
+        parent::onAfterWrite();
     }
 }
