@@ -12,6 +12,12 @@ const config = {
         src: './assets/scss/layout.scss',
         dest: './dist/css'
     },
+    js: {
+        src: [
+            './assets/js/timeline.js'
+        ],
+        dest: './dist/javascript'
+    },
     img: {
         src: './assets/img',
         dest: './dist/img'
@@ -35,6 +41,7 @@ const config = {
 
 mix.sass(config.scss.src, config.scss.dest).sourceMaps()
     .copy(config.css.src, config.css.dest)
+    .copy(config.js.src, config.js.dest)
     .copy(config.vendor.css, './dist/css/vendor')
     .copy(config.vendor.javascript, './dist/javascript/vendor')
     .copyDirectory(config.img.src, config.img.dest)

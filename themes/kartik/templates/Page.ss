@@ -22,6 +22,8 @@
     <% include Footer %>
     <% require javascript('_resources/themes/kartik/dist/javascript/vendor/jquery.min.js') %>
     <% require javascript('_resources/themes/kartik/dist/javascript/vendor/bootstrap.min.js') %>
+        <% require javascript('_resources/themes/kartik/dist/javascript/timeline.js') %>
+
 </footer>
 </body>
 </html>
