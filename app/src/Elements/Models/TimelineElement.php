@@ -7,6 +7,7 @@ use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
+use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
 /**
  * Class TimelineElement
@@ -66,7 +67,10 @@ class TimelineElement extends BaseElement
         return $fields;
     }
 
-    public function getTileElementGrid()
+    /**
+     * @return GridField
+     */
+    public function getTileElementGrid(): GridField
     {
         $grid = GridField::create(
             'Timelines',
@@ -74,6 +78,8 @@ class TimelineElement extends BaseElement
             $this->Timelines(),
             GridFieldConfig_RecordEditor::create()
         );
+
+        $grid->getConfig()->addComponent(new GridFieldOrderableRows('Sort'));
 
         return $grid;
     }

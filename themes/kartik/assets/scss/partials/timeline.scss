@@ -18,7 +18,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 80vw;
+        //width: 80vw;
         height: 100px;
         max-width: 1000px;
         position: relative;
@@ -31,6 +31,7 @@
         background-color: #2C3E50;
         position: relative;
         border-radius: 50%;
+        margin-right: 40px;
     }
     .input:hover {
         cursor: pointer;
