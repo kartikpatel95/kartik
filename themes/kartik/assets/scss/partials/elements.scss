@@ -1,8 +1,19 @@
 .element {
     .banner_element {
-        img {
-            width: 100%;
+        .message {
+            color: white;
+            font-size: 52px;
+            display: flex;
+            align-items: center;
+            height: 100%;
         }
+    }
+
+    .one-column-block,
+    .two-column-bock,
+    .three-column-block,
+    .four-column-block {
+        padding-top: 10px;
     }
 
     .col-title {

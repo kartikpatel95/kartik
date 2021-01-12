@@ -1,5 +1,5 @@
 <% if $ElementalArea %>
-    $ElementalArea
+        $ElementalArea
 <% else %>
     <div class="section">
         <div class="container">

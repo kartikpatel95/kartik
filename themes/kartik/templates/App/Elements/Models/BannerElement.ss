@@ -1,3 +1,8 @@
-<div class="banner_element $ImageLength">
-    <img src="$Banner.URL" alt="$Banner.Title" style="height:{$Height}px">
+<div class="banner_element $ImageLength" style="background-image: url($Banner.URL); height:{$Height}px">
+    <% if $Message %>
+        <div class="container message">
+
+            $Message
+        </div>
+    <% end_if %>
 </div>

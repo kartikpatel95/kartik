@@ -5,6 +5,7 @@ namespace App\Elements\Models;
 use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
+use SilverStripe\Forms\FieldList;
 
 /**
  * Class BannerElement
@@ -45,6 +46,7 @@ class BannerElement extends BaseElement
     private static $db = [
         'Height' => "Enum('300,350,400,450,500')",
         'ImageLength' => "Enum('full,container')",
+        'Message' => 'Text'
     ];
 
     /**
@@ -61,11 +63,18 @@ class BannerElement extends BaseElement
         'Banner'
     ];
 
-    public function getCMSFields()
+    /**
+     * @return FieldList
+     */
+    public function getCMSFields(): FieldList
     {
         $fields = parent::getCMSFields();
         $fields->removeByName('ContainerType');
-        $fields->addFieldToTab('Root.Main', UploadField::create('Banner'));
+        $fields->addFieldToTab(
+            'Root.Main',
+            UploadField::create('Banner')
+                       ->setFolderName('Banners')
+        );
         $fields->dataFieldByName('ImageLength')->setTitle('Image Length');
 
         return $fields;
