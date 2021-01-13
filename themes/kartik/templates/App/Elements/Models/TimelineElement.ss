@@ -1,7 +1,9 @@
 <div class="timeline-element <% if not $Timelines %>p-0<% end_if %>">
     <div class="container">
         <% if $ShowTitle && $Title %>
-            <h1>$Title</h1>
+            <div class="col-title">
+                <h2>$Title</h2>
+            </div>
         <% end_if %>
         <% if $Timelines %>
             <div class="py-4">
@@ -9,7 +11,7 @@
                     <div class="input-flex-container">
                         <% loop $Timelines.Sort('Sort') %>
                             <div class="input <% if $Active %>active<% end_if %>">
-                                <span data-year="$Date.Format('YYYY')" data-info="$Message"></span>
+                                <span data-year="$Date.Format('Y')" data-info="$Message"></span>
                             </div>
                         <% end_loop %>
                     </div>
