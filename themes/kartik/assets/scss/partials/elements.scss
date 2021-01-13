@@ -1,5 +1,6 @@
 .element {
     .banner_element {
+        background-size: cover;
         .message {
             color: white;
             font-size: 52px;
@@ -22,7 +23,18 @@
         border-bottom: 1px solid #d3caca;
     }
 
-    #googlemap {
-        height: 400px !important;
+    .googlemap {
+        height: 300px !important;
+    }
+
+    .app__elements__models__imageelement {
+        height: 100%;
+        .element {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
+

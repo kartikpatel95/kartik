@@ -18,7 +18,6 @@
         "gorriecoe/silverstripe-linkfield": "^1.0",
         "gorriecoe/silverstripe-link": "^1.2",
         "symbiote/silverstripe-gridfieldextensions": "^3.2",
-        "betterbrief/silverstripe-googlemapfield": "^2.2",
         "ext-json": "*"
     },
     "require-dev": {

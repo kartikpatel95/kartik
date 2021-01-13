@@ -1,5 +1,5 @@
 function initMap() {
-    const mapnode = jQuery("#googlemap");
+    const mapnode = jQuery(".googlemap");
 
     if (typeof mapnode === "undefined" || mapnode == null || typeof mapnode.length === "undefined" || mapnode.length == null || mapnode.length < 1)
         return;
@@ -33,8 +33,8 @@ function initMap() {
             });
         } else {
             $('.google-map').addClass('container-fluid')
-            $('#googlemap').addClass('d-none')
-            $('#google-map-error').removeClass('d-none')
+            $('.googlemap').addClass('d-none')
+            $('.google-map-error').removeClass('d-none')
         }
     });
 }
