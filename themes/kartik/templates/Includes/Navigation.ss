@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <% with $SiteConfig %>
                 <div class="site-logo">
                     <% if $Logo %>$Logo<% else %><img src="$ThemeDir/dist/img/logo.svg" alt="Site logo" class="site-logo"><% end_if %>

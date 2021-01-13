@@ -46,7 +46,6 @@ class BannerElement extends BaseElement
     private static $db = [
         'Height' => "Enum('300,350,400,450,500')",
         'ImageLength' => "Enum('full,container')",
-        'Message' => 'Text'
     ];
 
     /**

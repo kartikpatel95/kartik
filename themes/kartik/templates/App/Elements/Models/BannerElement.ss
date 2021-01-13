@@ -1,8 +1,7 @@
 <div class="banner_element $ImageLength" style="background-image: url($Banner.URL); height:{$Height}px">
-    <% if $Message %>
+    <% if $Title && $ShowTitle %>
         <div class="container message">
-
-            $Message
+            $Title
         </div>
     <% end_if %>
 </div>
