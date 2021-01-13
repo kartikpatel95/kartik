@@ -20,6 +20,9 @@ class HomePage extends \Page
      */
     private static $table_name = "HomePage";
 
+    /**
+     * @var string
+     */
     private static $icon_class = 'font-icon-p-home';
 
     /**
