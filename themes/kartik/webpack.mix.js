@@ -14,7 +14,8 @@ const config = {
     },
     js: {
         src: [
-            './assets/js/timeline.js'
+            './assets/js/timeline.js',
+            './assets/js/googlemap.js',
         ],
         dest: './dist/javascript'
     },

@@ -4,8 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3958384715239b5d81f25aac378b46c",
+    "content-hash": "d779d8e2fc5deccd85f7a3008f196f3f",
     "packages": [
+        {
+            "name": "betterbrief/silverstripe-googlemapfield",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BetterBrief/silverstripe-googlemapfield.git",
+                "reference": "06fdaa0db8c83ad634900abbd9063e07e8d34122"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BetterBrief/silverstripe-googlemapfield/zipball/06fdaa0db8c83ad634900abbd9063e07e8d34122",
+                "reference": "06fdaa0db8c83ad634900abbd9063e07e8d34122",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "silverstripe/framework": "^4"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "expose": [
+                    "client/css",
+                    "client/js"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "BetterBrief\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Will Morgan",
+                    "homepage": "http://twitter.com/willmorgan",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Save locations using latitude/longitude DataObject fields.",
+            "homepage": "http://github.com/BetterBrief/googlemapfield",
+            "keywords": [
+                "geolocation",
+                "google",
+                "googlemapfield",
+                "map",
+                "maps",
+                "silverstripe"
+            ],
+            "time": "2018-09-24T08:20:12+00:00"
+        },
         {
             "name": "bramus/ansi-php",
             "version": "3.0.3",

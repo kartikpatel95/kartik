@@ -6,3 +6,12 @@ SilverStripe\Core\Manifest\ModuleManifest:
 SilverStripe\Forms\HTMLEditor\TinyMCEConfig:
   editor_css:
     - 'themes/kartik/dist/css/framework/editor.css'
+BetterBrief\GoogleMapField:
+  default_options:
+    api_key: AIzaSyBA1_8CQ8CZfGldwFCSQiNL8t0RGJWcaPg
+    show_search_box: true
+    default_field_values:
+      Latitude: -37.135589
+      Longitude: 175.539367
+      Zoom: 12
+

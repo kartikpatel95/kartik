@@ -22,8 +22,8 @@
     <% include Footer %>
     <% require javascript('_resources/themes/kartik/dist/javascript/vendor/jquery.min.js') %>
     <% require javascript('_resources/themes/kartik/dist/javascript/vendor/bootstrap.min.js') %>
-        <% require javascript('_resources/themes/kartik/dist/javascript/timeline.js') %>
-
+    <% require javascript('_resources/themes/kartik/dist/javascript/timeline.js') %>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA1_8CQ8CZfGldwFCSQiNL8t0RGJWcaPg&callback=initMap"></script>
 </footer>
 </body>
 </html>
