@@ -31,4 +31,17 @@ class BGColourExtension extends DataExtension
             ColorField::create('BgColor', 'Background color')
         );
     }
+
+    /**
+     * @param $colour
+     * @return bool
+     */
+    public function isWhite(string $colour): bool
+    {
+        if ($colour === '') {
+            return true;
+        }
+
+        return false;
+    }
 }

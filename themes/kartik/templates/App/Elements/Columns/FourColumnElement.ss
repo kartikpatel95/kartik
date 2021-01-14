@@ -1,4 +1,4 @@
-<div class="four-column-block" style="background-color: $BgColor.CSSColor(0.5);">
+<div class="four-column-block" <% if not $isWhite($BgColor) %>style="background-color: $BgColor.CSSColor(0.5);"<% end_if %>>
     <div class="container">
         <% if $ShowTitle && $Title %>
             <div class="col-title">
