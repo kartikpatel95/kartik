@@ -54,9 +54,11 @@ class HomePage extends \Page
         $fields = parent::getCMSFields();
 
         $banner = UploadField::create('Banner', 'Banner');
+        $fields->removeByName('ElementalArea');
+
         $banner->setFolderName('Banners');
         $fields->addFieldToTab('Root.Main', TextareaField::create('BannerMessage'), 'ElementalArea');
-        $fields->addFieldToTab('Root.Main', $banner, 'ElementalArea');
+        $fields->addFieldToTab('Root.Main', $banner);
 
         return $fields;
     }
