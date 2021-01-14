@@ -1,4 +1,7 @@
 .element {
+    img {
+        max-width: 100%;
+    }
     .banner_element {
         background-size: cover;
         .message {
@@ -22,6 +25,7 @@
     .three-column-block,
     .four-column-block {
         padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .col-title {
