@@ -10,21 +10,25 @@ App\Elements\Columns\OneColumnElement:
     - App\Elements\Columns\TwoColumnElement
     - App\Elements\Columns\ThreeColumnElement
     - App\Elements\Columns\FourColumnElement
+    - App\Elements\Models\TimelineElement
 App\Elements\Columns\TwoColumnElement:
   disallowed_elements:
     - App\Elements\Columns\OneColumnElement
     - App\Elements\Columns\TwoColumnElement
     - App\Elements\Columns\ThreeColumnElement
     - App\Elements\Columns\FourColumnElement
+    - App\Elements\Models\TimelineElement
 App\Elements\Columns\ThreeColumnElement:
   disallowed_elements:
     - App\Elements\Columns\OneColumnElement
     - App\Elements\Columns\TwoColumnElement
     - App\Elements\Columns\ThreeColumnElement
     - App\Elements\Columns\FourColumnElement
+    - App\Elements\Models\TimelineElement
 App\Elements\Columns\FourColumnElement:
   disallowed_elements:
     - App\Elements\Columns\OneColumnElement
     - App\Elements\Columns\TwoColumnElement
     - App\Elements\Columns\ThreeColumnElement
     - App\Elements\Columns\FourColumnElement
+    - App\Elements\Models\TimelineElement
