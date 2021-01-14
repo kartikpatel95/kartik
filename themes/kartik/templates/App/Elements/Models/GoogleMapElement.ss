@@ -5,3 +5,4 @@
         Error loading google map. Try refreshing...
     </div>
 </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA1_8CQ8CZfGldwFCSQiNL8t0RGJWcaPg&callback=initMap"></script>

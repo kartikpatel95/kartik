@@ -4,6 +4,7 @@
     "/dist/css/framework/typography.css": "/dist/css/framework/typography.css",
     "/dist/javascript/timeline.js": "/dist/javascript/timeline.js",
     "/dist/javascript/googlemap.js": "/dist/javascript/googlemap.js",
+    "/dist/javascript/script.js": "/dist/javascript/script.js",
     "/dist/css/vendor/bootstrap.min.css": "/dist/css/vendor/bootstrap.min.css",
     "/dist/javascript/vendor/bootstrap.min.js": "/dist/javascript/vendor/bootstrap.min.js",
     "/dist/javascript/vendor/jquery.min.js": "/dist/javascript/vendor/jquery.min.js"

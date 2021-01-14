@@ -4,7 +4,7 @@
             <div class="banner-message container">
                 <div class="content">
                     $BannerMessage
-                    </div>
+                 </div>
             </div>
         </div>
     <% end_if %>

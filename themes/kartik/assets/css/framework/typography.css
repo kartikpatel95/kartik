@@ -12,13 +12,6 @@ body a {
     text-decoration: none;
 }
 
-/* this removes the underline from all links */
-body a:link {
-    -webkit-tap-highlight-color: #b80000
-}
-
-/* this sets the highlight color when links are tapped on Safari (browser) on iPhone */
-
 
 /* HEADERS */
 .typography h1,

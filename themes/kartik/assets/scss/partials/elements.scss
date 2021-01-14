@@ -5,8 +5,13 @@
             color: white;
             font-size: 52px;
             display: flex;
-            align-items: center;
             height: 100%;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                margin-bottom: 30px;
+            }
         }
     }
 
@@ -48,7 +53,7 @@
             position: absolute;
             width: 100%;
             background: rgba(11, 177, 245, 0.5);
-            padding: 10px;
+            padding: 15px 10px;
             font-weight: bold;
             text-align: center;
             letter-spacing: 1px;
@@ -57,6 +62,13 @@
     }
 
     a {
+        .project-summary-image {
+            &:hover {
+                .title {
+                    background: rgba(11, 177, 245, 1);
+                }
+            }
+        }
         &:hover {
             border-bottom: none !important;
         }

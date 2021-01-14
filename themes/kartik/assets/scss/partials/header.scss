@@ -11,13 +11,14 @@ header {
 
         .site-logo {
             img {
-                height: 85px;
+                height: 80px;
             }
         }
     }
 
     nav {
         &.navbar {
+            padding: 0 15px;
             .nav-link {
                 letter-spacing: 1px;
                 font-size: 16px;
