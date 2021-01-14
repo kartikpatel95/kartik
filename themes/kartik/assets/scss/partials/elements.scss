@@ -36,5 +36,24 @@
             justify-content: center;
         }
     }
+
+    .project-summary-image {
+        height: 225px;
+        width: 300px;
+        position: relative;
+        margin: 0 10px 15px 10px;
+
+        .title {
+            color: white;
+            position: absolute;
+            width: 100%;
+            background: rgba(11, 177, 245, 0.5);
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            bottom: 0;
+        }
+    }
 }
 
