@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use App\Elements\Models\TilesElement;
+use gorriecoe\Link\Models\Link;
+use gorriecoe\LinkField\LinkField;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\DataObject;
@@ -43,7 +45,8 @@ class Tiles extends DataObject
      */
     private static $has_one = [
         'Photo' => Image::class,
-        'TileElement' => TilesElement::class
+        'TileElement' => TilesElement::class,
+        'LinkTo' => Link::class
     ];
 
     /**
@@ -71,7 +74,14 @@ class Tiles extends DataObject
     public function getCMSFields(): FieldList
     {
         $fields = parent::getCMSFields();
-        $fields->removeFieldsFromTab('Root.Main', ['Sort', 'TileElementID']);
+        $fields->removeFieldsFromTab('Root.Main', ['Sort', 'TileElementID', 'LinkToID']);
+
+        $fields->addFieldsToTab(
+        'Root.Main',
+        [
+            LinkField::create('LinkTo', '', $this)
+        ]
+    );
 
         return $fields;
     }

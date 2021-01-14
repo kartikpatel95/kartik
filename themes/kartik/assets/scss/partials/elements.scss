@@ -55,5 +55,11 @@
             bottom: 0;
         }
     }
+
+    a {
+        &:hover {
+            border-bottom: none !important;
+        }
+    }
 }
 

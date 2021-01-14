@@ -4,11 +4,13 @@ $BgColor
        <div class="container">
        <div class="d-flex justify-content-center flex-wrap">
           <% loop $Tiles.Sort('Sort') %>
-            <div class="project-summary-image" style="background-image: url($Photo.Link);">
-                <div class="title">
-                    $Title
+            <% if $LinkTo %><a href="$LinkTo.LinkURL" class="tile-link"><% end_if %>
+                <div class="project-summary-image" style="background-image: url($Photo.Link);">
+                    <div class="title">
+                        $Title
+                    </div>
                 </div>
-            </div>
+            <% if $LinkTo %></a><% end_if %>
           <% end_loop %>
           </div>
       </div>
