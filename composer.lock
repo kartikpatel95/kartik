@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c27fd682d92f7b19691d4eea32ab8ea",
+    "content-hash": "a3866c1122f6ab3632b1acd0a9d5271d",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -3555,6 +3555,54 @@
                 }
             ],
             "time": "2020-12-08T16:59:59+00:00"
+        },
+        {
+            "name": "tractorcow/silverstripe-colorpicker",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tractorcow/silverstripe-colorpicker.git",
+                "reference": "69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tractorcow/silverstripe-colorpicker/zipball/69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf",
+                "reference": "69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                },
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "TractorCow\\Colorpicker\\": "src/",
+                    "TractorCow\\Colorpicker\\Tests\\": "tests/php/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian.mooyman@gmail.com"
+                }
+            ],
+            "description": "Color picker field for Silverstripe CMS using the ColorPicker jQuery plugin",
+            "keywords": [
+                "color",
+                "colorpicker",
+                "colour",
+                "silverstripe"
+            ],
+            "time": "2019-10-17T02:18:35+00:00"
         },
         {
             "name": "tractorcow/silverstripe-robots",

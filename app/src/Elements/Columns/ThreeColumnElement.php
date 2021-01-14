@@ -2,6 +2,7 @@
 
 namespace App\Elements\Columns;
 
+use App\Extensions\BGColourExtension;
 use DNADesign\Elemental\Models\BaseElement;
 use DNADesign\Elemental\Models\ElementalArea;
 use DNADesign\Elemental\Extensions\ElementalAreasExtension;
@@ -63,7 +64,8 @@ class ThreeColumnElement extends BaseElement
      * @var array
      */
     private static $extensions = [
-        ElementalAreasExtension::class
+        ElementalAreasExtension::class,
+        BGColourExtension::class
     ];
 
     /**

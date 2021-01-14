@@ -2,9 +2,11 @@
 
 namespace App\Elements\Columns;
 
+use App\Extensions\BGColourExtension;
 use DNADesign\Elemental\Extensions\ElementalAreasExtension;
 use DNADesign\Elemental\Models\BaseElement;
 use DNADesign\Elemental\Models\ElementalArea;
+use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\LiteralField;
 
 /**
@@ -57,7 +59,8 @@ class OneColumnElement extends BaseElement
      * @var array
      */
     private static $extensions = [
-        ElementalAreasExtension::class
+        ElementalAreasExtension::class,
+        BGColourExtension::class
     ];
 
     /**
@@ -65,7 +68,10 @@ class OneColumnElement extends BaseElement
      */
     private static $inline_editable = false;
 
-    public function getCMSFields()
+    /**
+     * @return FieldList
+     */
+    public function getCMSFields(): FieldList
     {
         $fields = parent::getCMSFields();
 

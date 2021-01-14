@@ -1,4 +1,4 @@
-<div class="two-column-bock">
+<div class="two-column-bock" style="background-color: $BgColor.CSSColor(0.5);">
     <div class="container">
         <% if $ShowTitle && $Title %>
             <div class="col-title">

@@ -20,7 +20,8 @@
         "symbiote/silverstripe-gridfieldextensions": "^3.2",
         "ext-json": "*",
         "tractorcow/silverstripe-robots": "^4.0",
-        "silverstripe/googlesitemaps": "^2.1"
+        "silverstripe/googlesitemaps": "^2.1",
+        "tractorcow/silverstripe-colorpicker": "^4.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
