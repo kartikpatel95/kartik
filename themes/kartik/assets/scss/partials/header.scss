@@ -27,6 +27,21 @@ header {
                     font-weight: 700;
                 }
             }
+
+            .dropdown-menu {
+                margin-top: 37px;
+                border-radius: 0;
+                background: #121e26;
+                .dropdown-item {
+                    color: white;
+                    padding: 10px 20px;
+                    font-size: 14px;
+                    &:hover {
+                        background-color: inherit;
+                        color: rgba(255,255,255,.75);
+                    }
+                }
+            }
         }
     }
 }
