@@ -23,10 +23,7 @@ header {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     flex-basis: auto;
-    /*background-color: #eee;  let's fade to grey...  ' */
 }
-
-
 /*flex footer ends here*/
 
 
@@ -40,20 +37,55 @@ footer {
     color: $white;
 
     .footer {
-        .footer-heading {
-            padding: 0 0 10px 0;
-            font-size: 25px;
-            font-family: 'Lato', sans-serif;
-        }
-
         .social-icons {
             font-size: 25px;
-
             a {
                 i {
                     color: $white;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
                     &:hover {
                         color: inherit;
+                    }
+                }
+            }
+        }
+
+        .site-logo {
+            img {
+                height: 70px;
+            }
+        }
+
+        .rights-reserved {
+            display: flex;
+            align-items: flex-end;
+            font-weight: 100;
+            padding-top: 10px;
+        }
+
+        .email {
+            font-size: 16px;
+            font-weight: 200;
+            a {
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+
+        .row {
+            .col {
+                .rights-reserved {
+                    display: none;
+                    @include media-breakpoint-up(sm) {
+                        display: block;
+                    }
+                }
+            }
+            .col-auto {
+                .rights-reserved {
+                    @include media-breakpoint-up(sm) {
+                        display: none;
                     }
                 }
             }

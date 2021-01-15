@@ -22,9 +22,6 @@ const config = {
         dest: './dist/img'
     },
     vendor: {
-        css: [
-            'node_modules/bootstrap/dist/css/bootstrap.min.css',
-        ],
         javascript: [
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/jquery/dist/jquery.min.js',
@@ -49,7 +46,6 @@ mix.sass(config.scss.src, config.scss.dest).sourceMaps()
     .copy(config.css.src, config.css.dest)
     .copy(config.js.src, config.js.dest)
     .copy(config.vendor.img.lightbox, './dist/img/lightbox')
-    .copy(config.vendor.css, './dist/css/vendor')
     .copy(config.vendor.javascript, './dist/javascript/vendor')
     .copyDirectory(config.img.src, config.img.dest)
     .browserSync({

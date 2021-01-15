@@ -9,7 +9,6 @@
 <body>
 <header>
     <% require themedCSS('dist/css/layout') %>
-    <% require themedCSS('dist/css/vendor/bootstrap.min') %>
     <% require themedCSS('dist/css/lightbox') %>
     <% require themedCSS('dist/css/typography') %>
     <% include Header %>

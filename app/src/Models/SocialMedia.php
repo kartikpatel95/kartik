@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use gorriecoe\Link\Models\Link;
+use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
 use SilverStripe\SiteConfig\SiteConfig;
 
@@ -52,14 +53,16 @@ class SocialMedia extends Link
         'Social',
     ];
 
-
-    public function getCMSFields()
+    /**
+     * @return FieldList
+     */
+    public function getCMSFields(): FieldList
     {
         $fields = parent::getCMSFields();
         $fields->removeFieldsFromTab('Root.Main', ['SiteConfigID', 'SortOrder', 'SocialID']);
 
         $fields->addFieldToTab('Root.Main', TextField::create('Icon')
-            ->setDescription('Get your social icons from the following URL <a href="https://fontawesome.com/">Font Awesome</a>'),
+            ->setDescription('Get your social icons from the following URL <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>'),
             'OpenInNewWindow');
 
 
