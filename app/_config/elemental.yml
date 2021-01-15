@@ -11,6 +11,7 @@ App\Elements\Columns\OneColumnElement:
     - App\Elements\Columns\ThreeColumnElement
     - App\Elements\Columns\FourColumnElement
     - App\Elements\Models\TimelineElement
+    - App\Elements\Models\TilesElement
 App\Elements\Columns\TwoColumnElement:
   disallowed_elements:
     - App\Elements\Columns\OneColumnElement
@@ -18,6 +19,7 @@ App\Elements\Columns\TwoColumnElement:
     - App\Elements\Columns\ThreeColumnElement
     - App\Elements\Columns\FourColumnElement
     - App\Elements\Models\TimelineElement
+    - App\Elements\Models\TilesElement
 App\Elements\Columns\ThreeColumnElement:
   disallowed_elements:
     - App\Elements\Columns\OneColumnElement
@@ -25,6 +27,7 @@ App\Elements\Columns\ThreeColumnElement:
     - App\Elements\Columns\ThreeColumnElement
     - App\Elements\Columns\FourColumnElement
     - App\Elements\Models\TimelineElement
+    - App\Elements\Models\TilesElement
 App\Elements\Columns\FourColumnElement:
   disallowed_elements:
     - App\Elements\Columns\OneColumnElement
@@ -32,3 +35,4 @@ App\Elements\Columns\FourColumnElement:
     - App\Elements\Columns\ThreeColumnElement
     - App\Elements\Columns\FourColumnElement
     - App\Elements\Models\TimelineElement
+    - App\Elements\Models\TilesElement
