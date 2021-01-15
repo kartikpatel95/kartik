@@ -10,7 +10,8 @@
 <header>
     <% require themedCSS('dist/css/layout') %>
     <% require themedCSS('dist/css/vendor/bootstrap.min') %>
-    <% require themedCSS('dist/css/framework/typography') %>
+    <% require themedCSS('dist/css/lightbox') %>
+    <% require themedCSS('dist/css/typography') %>
     <% include Header %>
 </header>
 <div class="main">
@@ -22,6 +23,7 @@
     <% include Footer %>
     <% require javascript('_resources/themes/kartik/dist/javascript/vendor/jquery.min.js') %>
     <% require javascript('_resources/themes/kartik/dist/javascript/vendor/bootstrap.min.js') %>
+    <% require javascript('_resources/themes/kartik/dist/javascript/vendor/lightbox.min.js') %>
     <% require javascript('_resources/themes/kartik/dist/javascript/timeline.js') %>
     <% require javascript('_resources/themes/kartik/dist/javascript/script.js') %>
 </footer>

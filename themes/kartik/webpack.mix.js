@@ -2,11 +2,8 @@ let mix = require("laravel-mix");
 
 const config = {
     css: {
-        src: [
-            './assets/css/framework/editor.css',
-            './assets/css/framework/typography.css',
-        ],
-        dest: './dist/css/framework'
+        src: './assets/css/*.css',
+        dest: './dist/css'
     },
     scss: {
         src: './assets/scss/layout.scss',
@@ -26,12 +23,19 @@ const config = {
     },
     vendor: {
         css: [
-            'node_modules/bootstrap/dist/css/bootstrap.min.css'
+            'node_modules/bootstrap/dist/css/bootstrap.min.css',
         ],
         javascript: [
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/jquery/dist/jquery.min.js',
-        ]
+            'node_modules/lightbox2/dist/js/lightbox.min.js',
+        ],
+        img: {
+            lightbox: [
+                'node_modules/lightbox2/dist/images/*.png',
+                'node_modules/lightbox2/dist/images/*.gif',
+            ]
+        }
     },
     watch: [
         './templates/**/*.ss',
@@ -44,6 +48,7 @@ const config = {
 mix.sass(config.scss.src, config.scss.dest).sourceMaps()
     .copy(config.css.src, config.css.dest)
     .copy(config.js.src, config.js.dest)
+    .copy(config.vendor.img.lightbox, './dist/img/lightbox')
     .copy(config.vendor.css, './dist/css/vendor')
     .copy(config.vendor.javascript, './dist/javascript/vendor')
     .copyDirectory(config.img.src, config.img.dest)

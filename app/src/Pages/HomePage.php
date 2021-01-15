@@ -2,6 +2,7 @@
 
 namespace App\Pages;
 
+use App\Traits\UniquePage;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\FieldList;
@@ -14,6 +15,8 @@ use SilverStripe\Forms\TextareaField;
  */
 class HomePage extends \Page
 {
+
+    use UniquePage;
 
     /**
      * @var string

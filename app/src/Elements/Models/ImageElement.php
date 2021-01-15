@@ -5,6 +5,7 @@ namespace App\Elements\Models;
 use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
+use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\FieldList;
 
 /**
@@ -38,6 +39,20 @@ class ImageElement extends BaseElement
     /**
      * @var array
      */
+    private static $db = [
+        'LightboxView' => 'Boolean'
+    ];
+
+    /**
+     * @var array
+     */
+    private static $defaults = [
+        'LightboxView' => 1
+    ];
+
+    /**
+     * @var array
+     */
     private static $has_one = [
         'Photo' => Image::class,
     ];
@@ -55,6 +70,8 @@ class ImageElement extends BaseElement
     public function getCMSFields(): FieldList
     {
         $fields = parent::getCMSFields();
+
+        $fields->addFieldToTab('Root.Main', CheckboxField::create('LightboxView', 'Popup View'));
 
         $image = UploadField::create('Photo');
         $fields->addFieldToTab('Root.Main', $image);

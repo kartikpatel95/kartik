@@ -1,11 +1,17 @@
 {
     "/dist/css/layout.css": "/dist/css/layout.css",
-    "/dist/css/framework/editor.css": "/dist/css/framework/editor.css",
-    "/dist/css/framework/typography.css": "/dist/css/framework/typography.css",
+    "/dist/css/editor.css": "/dist/css/editor.css",
+    "/dist/css/lightbox.css": "/dist/css/lightbox.css",
+    "/dist/css/typography.css": "/dist/css/typography.css",
     "/dist/javascript/timeline.js": "/dist/javascript/timeline.js",
     "/dist/javascript/googlemap.js": "/dist/javascript/googlemap.js",
     "/dist/javascript/script.js": "/dist/javascript/script.js",
+    "/dist/img/lightbox/close.png": "/dist/img/lightbox/close.png",
+    "/dist/img/lightbox/next.png": "/dist/img/lightbox/next.png",
+    "/dist/img/lightbox/prev.png": "/dist/img/lightbox/prev.png",
+    "/dist/img/lightbox/loading.gif": "/dist/img/lightbox/loading.gif",
     "/dist/css/vendor/bootstrap.min.css": "/dist/css/vendor/bootstrap.min.css",
     "/dist/javascript/vendor/bootstrap.min.js": "/dist/javascript/vendor/bootstrap.min.js",
-    "/dist/javascript/vendor/jquery.min.js": "/dist/javascript/vendor/jquery.min.js"
+    "/dist/javascript/vendor/jquery.min.js": "/dist/javascript/vendor/jquery.min.js",
+    "/dist/javascript/vendor/lightbox.min.js": "/dist/javascript/vendor/lightbox.min.js"
 }

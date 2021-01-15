@@ -59,6 +59,7 @@ body a {
 }
 
 .typography h6 {
+    font-size: 14px;
     line-height: 20px;
     font-weight: bold;
     margin-bottom: 5px;
