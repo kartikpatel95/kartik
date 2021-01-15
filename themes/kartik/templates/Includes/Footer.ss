@@ -28,7 +28,7 @@
                         </a>
                     </div>
 
-                    <div class="rights-reserved"> 
+                    <div class="rights-reserved">
                         &copy 2020 | All Rights Reserved | Kartik Patel
                     </div>
                 </div>

@@ -9,5 +9,5 @@ ss.error.log
 .idea/
 .DS_Store
 node_modules
-dist
+#dist
 deploy.php
